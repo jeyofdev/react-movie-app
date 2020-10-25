@@ -31,18 +31,18 @@ class Movie extends Component {
             .then(data => {
                 console.log(`The film ${data.title} has been added.`);
                 this.setState({
+                    error: false,
                     message: `The film ${data.title} has been added.`,
                     title: '',
                     poster: '',
                     comment: '',
-                    error: false
                 })
             })
             .catch(e => {
                 console.error(`Error while adding the movie`);
                 this.setState({ 
-                    message: 'There was a problem, the movie was not added',
-                    error: true
+                    error: true,
+                    message: 'There was a problem, the movie was not added'
                 })
             })
     }

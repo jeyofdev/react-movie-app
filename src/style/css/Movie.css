@@ -1,0 +1,75 @@
+.Movie {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.Movie .alert {
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - (2 * 10px));
+}
+
+.Movie .alert-danger {
+    background: rgb(243, 201, 201);
+    border: 2px solid rgb(180, 72, 72);
+}
+
+.Movie .alert-success {
+    background: rgb(201, 243, 207);
+    border: 2px solid rgb(81, 180, 72);
+    
+}
+
+.Movie form {
+    width: calc(100% - (2 * 15px));
+    background: var(--color-primary);
+    border: 2px solid var(--color-secondary);
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.Movie form .form-data {
+    margin-bottom: 20px;
+}
+
+.Movie form .form-data label {
+    display: block;
+    text-align: left;
+}
+
+.Movie form .form-data input,
+.Movie form .form-data textarea {
+    width: calc(100% - (2 * 10px));
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    margin-top: 5px;
+    outline: none;
+}
+
+.Movie form .form-data textarea {
+    resize: none;
+}
+
+.Movie form button {
+    padding: 10px 30px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    border: 2px solid var(--color-secondary);
+    box-shadow: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.Movie form button:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
